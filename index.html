@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element selector */
+        p{
+            border: 2px solid red;
+        }
+
+        /* Id selector */
+        #first{
+            color: green;
+        }
+
+        /* Class selector */
+        .student{
+            color: yellow;
+            background-color: blue;
+        }
+
+        /* Grouping selector */
+        footer, span{
+            background-color: pink;
+        }
+        div li p{
+        color: yellow;
+        background-color: green;
+        font-weight: bold;
+    }
+    h3{
+      color:purple;
+    }
+    li:nth-child(3){
+      color: cyan;
+}
+    </style>
+</head>
+<body>
+    <h3> Selectors</h3>
+    <p id="first">hello my name is Bhavika!</p>
+    <p id="second" class="student">I am a Student </p>
+    <div>
+      <p>I love watching cute videos!</p>
+        <span>this is span</span>
+    </div>
+
+        <div class="row">
+            <ul>
+                <li class="item"><p> this is another paragraph inside li</p></li>
+                <li>this will not get affected</li>
+                <li>Hellooo this is 3 li!</li>
+                <p>this is a para inside ul</p>
+            </ul>
+          </div>
+    <footer>This is footer</footer>
+</body>
+</html>
